@@ -1,0 +1,69 @@
+# UiPath specific files
+.cache/
+.local/
+.objects/
+.settings/
+.tmh/
+.activities/
+.screenshots/
+.UiPath/
+UiPath.settings
+*.nuget.props
+*.nuget.targets
+
+# Project build artifacts
+*.nupkg
+project.json.backup
+*.xaml.cache
+*.xaml~
+*.json.backup
+
+# Log files
+*.log
+*.trace
+
+# Temporary files
+*.tmp
+*.temp
+*.lock
+
+# Debug files
+*.dbg
+*.pdb
+*.ilk
+*.exp
+
+# Package restore files
+packages/
+
+# Generated documentation
+Documentation/
+
+# Generated test outputs
+TestResults/
+output/
+
+# Published packages
+published/
+
+# IDE files
+.project
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Git merge conflict files
+*.orig
+*.rej
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
