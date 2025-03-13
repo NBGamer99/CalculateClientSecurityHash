@@ -46,6 +46,8 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -94,27 +96,66 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Extract_ClientInformation" sap:VirtualizedContainerService.HintSize="1412,538.824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Extract_ClientInformation" sap:VirtualizedContainerService.HintSize="1395,1058" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Extracting Client Information&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Work Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,331" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c96baa64-d32d-40ae-8eeb-6c67167369be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Work Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,862" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c96baa64-d32d-40ae-8eeb-6c67167369be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,622" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Client ID'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c96baa64-d32d-40ae-8eeb-6c67167369be" TextString="[out_ClientID]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/105244515" CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" ContentHash="-P54WMaivk6qFWN6t8yTPg" CvTextArea="561, 463, 62, 13" CvType="AnyWordGroup" DesignTimeRectangle="561, 463, 62, 13" DesignTimeScaleFactor="1" ElementType="Text" Guid="82b11b51-dad3-4d08-803c-2f6413b54d0b" InformativeScreenshot="f872cb5d9b53482309a6a170fcf92e3c.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/xRVsRKpprUuhfdOndemW2w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="498, 463, 63, 13" CvTextArgument="Client ID:" CvType="Text" DesignTimeRectangle="499, 462, 61, 16" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='Client ID:' check:innerText='Client ID:' /&gt;" Guid="86826316-19e5-4346-8821-cdf1e614c777" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Client Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="c96baa64-d32d-40ae-8eeb-6c67167369be" TextString="[out_ClientName]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/105244515" CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" ContentHash="MUr_uf3esUy_ReFK2_4TmQ" CvTextArea="587, 483, 75, 16" CvType="AnyWordGroup" DesignTimeRectangle="587, 483, 75, 16" DesignTimeScaleFactor="1" ElementType="Text" Guid="51e841d8-5b1b-46a4-b42b-0fd2b6f1a7f1" InformativeScreenshot="79c842eeeed562f78d1921b36b6497b1.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/B5x9extvpEmfCkbs1sTWMw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="498, 483, 87, 13" CvTextArgument="Client Name:" CvType="Text" DesignTimeRectangle="499, 482, 86, 16" FuzzySelectorArgument="&lt;webctrl type='' tag='B' class='' aaname='Client Name:' check:innerText='Client Name:' /&gt;" Guid="ee376607-b587-4771-bab2-9de7c6950238" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Client Country'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c96baa64-d32d-40ae-8eeb-6c67167369be" TextString="[out_ClientCountry]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/105244515" CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" ContentHash="n4_0Vv_gvE6a3CIvWhUAjw" CvTextArea="603, 503, 44, 13" CvType="AnyWordGroup" DesignTimeRectangle="603, 503, 44, 13" DesignTimeScaleFactor="1" ElementType="Text" Guid="fdc1d0c1-e276-4ea2-9ac4-033c2ee9eca7" InformativeScreenshot="f1ea79b30a10142afcaab82cf02c137f.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/_V567RZ5dkGCjAWmy6AfPg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="498, 503, 102, 16" CvTextArgument="Client Country:" CvType="Text" DesignTimeRectangle="499, 502, 101, 16" FuzzySelectorArgument="&lt;webctrl type='' tag='B' class='' aaname='Client Country:' check:innerText='Client Country:' /&gt;" Guid="35585de4-1705-499a-b381-8dba875604c9" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
