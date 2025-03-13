@@ -100,13 +100,13 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Navigate" sap:VirtualizedContainerService.HintSize="1395,680" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Navigate" sap:VirtualizedContainerService.HintSize="1412,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigating to WI Details&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Navigating to WI Details&quot;]" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a5fcba1a-4aea-49d6-adc5-7d69fc8f3af1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -114,19 +114,16 @@
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Boolean" Name="IsWorkDetails" />
-            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Work Items - Work Item …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[IsWorkDetails]" ScopeIdentifier="a5fcba1a-4aea-49d6-adc5-7d69fc8f3af1" Version="V4">
+            <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element 'Work Items - Work Item …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="a5fcba1a-4aea-49d6-adc5-7d69fc8f3af1" Version="V4">
               <uix:NCheckElement.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/105244515" CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" ContentHash="L-8RkO_Xb0OzYooC_8VE4w" CvTextArea="396, 221, 499, 31" CvTextArgument="Work Items - Work Item Details" CvType="Text" DesignTimeRectangle="398, 218, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='page-header' aaname='                                                                                                                                                                                     Work Items                                                                                                                                         -                                                 Work Item Details                                                         ' check:innerText='Work Items - Work Item Details' /&gt;" Guid="aa2909df-bfd0-44de-87d3-2be3b12fd92b" InformativeScreenshot="1863aed2d6129ed4e9020ee4b78c0106.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/kLQ-KTCGCUKicZGLwrRfTg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
                       <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="1261, 146, 39, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1247, 128, 67, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' aaname='Home' check:innerText='Home' /&gt;" Guid="592c07d6-ffc4-48ec-a370-ce1382c5b615" SearchSteps="FuzzySelector, CV" />
                       <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="396, 144, 132, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="383, 128, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" Guid="757b6cef-fb59-4b73-9ced-baa951798606" SearchSteps="FuzzySelector, CV" />
                       <uix:Target CVScreenId="5e58cc04-29d3-4a72-ae4c-28c33adaee31" CvTextArea="1328, 146, 130, 13" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1314, 128, 159, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Switch to new theme' /&gt;" Guid="88d22ade-fe03-4d25-9347-28a777ebb455" SearchSteps="FuzzySelector, CV" />
