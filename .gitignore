@@ -48,6 +48,7 @@ published/
 
 # IDE files
 .project
+.storage
 .vs/
 .idea/
 *.suo
