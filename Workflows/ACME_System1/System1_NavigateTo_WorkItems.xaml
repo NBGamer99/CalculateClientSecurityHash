@@ -92,13 +92,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_WorkItems" sap:VirtualizedContainerService.HintSize="1412,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_WorkItems" sap:VirtualizedContainerService.HintSize="1395,716" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigating to work items&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Navigating to work items&quot;]" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,520" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="cba3c94d-ac89-4aff-b9c2-efac242f8023" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -115,7 +115,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com" CVScreenId="4f009061-76b7-4b56-859d-3ae4e4b8fe52" ContentHash="2h29bWtijUOpaBXVnf_FGA" CvElementArea="458, 496, 206, 50" CvTextArea="526, 512, 93, 16" CvTextArgument="Work Items" CvType="Button" DesignTimeRectangle="461, 498, 200, 46" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg' check:innerText='Work Items' /&gt;" Guid="e16e0653-fe57-4ff4-9aba-411610d0bf56" InformativeScreenshot="90a631540fe98d9a0f6b4d3cfffb0425.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/8wVm2mdSxkim7qoh8qND9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="4f009061-76b7-4b56-859d-3ae4e4b8fe52" CvElementArea="459, 440, 205, 50" CvTextArea="520, 456, 102, 20" CvTextArgument="User options" CvType="Button" DesignTimeRectangle="461, 442, 200, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg dropdown-toggle' aaname='                  User options' check:innerText='User options' /&gt;" Guid="ad6e2215-1f24-43fb-9a44-dec8b4b6b753" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -129,7 +129,7 @@
                   <uix:VerifyExecutionOptions.Target>
                     <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items" CVScreenId="2158aece-fdbf-433d-9427-4b539a1bfe0b" ContentHash="ke0aJCksgEiVjzjMPTWqIQ" CvTextArea="396, 221, 184, 31" CvTextArgument="Work Items" CvType="Text" DesignTimeRectangle="398, 218, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='page-header' aaname='                                                                                                                                                                                     Work Items                                                         ' check:innerText='Work Items' /&gt;" Guid="322a33e0-12cf-4cf8-8a43-f078c0b18f8e" InformativeScreenshot="753dfbe28357ed9623a0b573dd9cfa56.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/8AmRg4tDh0SQbpOj5MCRAQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target CVScreenId="2158aece-fdbf-433d-9427-4b539a1bfe0b" CvTextArea="396, 144, 132, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="383, 128, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" Guid="d4f4ee92-dcb3-4fbf-86e3-5e4f37d19c31" SearchSteps="FuzzySelector, CV" />
                         </scg:List>
                       </uix:TargetAnchorable.Anchors>

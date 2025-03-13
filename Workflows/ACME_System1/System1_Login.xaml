@@ -109,7 +109,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Login" sap:VirtualizedContainerService.HintSize="1530,2441" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Login" sap:VirtualizedContainerService.HintSize="1395,2441" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -119,7 +119,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Opening ACME system1 in Edge {0} with the credential named {1}&quot;, in_System1URL,  in_System1_Credential)]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;✅ Opening ACME system1 in Edge {0} with the credential named {1}&quot;, in_System1URL,  in_System1_Credential)]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_System1_Credential]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrchestratorFolder]" sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
     <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Login Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2070" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V2">
       <uix:NApplicationCard.Body>
@@ -201,7 +201,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;User authentication required; starting login process&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;✅ User authentication required; starting login process&quot;]" />
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="daac381e-eaeb-4de2-b340-bf681c7798e0" Text="[Username]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="12236b89-8cec-4f96-9b74-482b1e685405" ContentHash="j6bHYIwxw0G0BKgvVS2l9g" CvElementArea="467, 422, 487, 37" CvType="InputBox" DesignTimeRectangle="468, 424, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="8676fbd6-1dc4-46c6-92a8-3cd1f7d1a2ff" InformativeScreenshot="8c057449ab1d42537befb465280dfaa6.png" IsResponsive="True" Reference="Ptmyqy4CHEaUfMDtPO_J0A/pbj4hxz8ukq_eG7i4KaHNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
