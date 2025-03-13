@@ -109,7 +109,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Login" sap:VirtualizedContainerService.HintSize="987,2437" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Login" sap:VirtualizedContainerService.HintSize="1530,2441" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -121,13 +121,13 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Opening ACME system1 in Edge {0} with the credential named {1}&quot;, in_System1URL,  in_System1_Credential)]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_System1_Credential]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrchestratorFolder]" sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Login Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2066" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Login Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2070" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,1826" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,1830" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="IsLoggedIn" />
             </Sequence.Variables>
@@ -136,7 +136,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_3" Result="[IsLoggedIn]" ScopeIdentifier="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V4">
+            <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_3" Result="[IsLoggedIn]" ScopeIdentifier="daac381e-eaeb-4de2-b340-bf681c7798e0" Timeout="1" Version="V4">
               <uix:NCheckElement.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="3f326802-4038-4df5-95b4-1dda59046f48" ContentHash="IURjN34VGkGRh13pGA2Edg" CvTextArea="1480, 145, 51, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1466, 128, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="70f5adee-ba44-4315-8115-191f9ceaa137" InformativeScreenshot="98953f1abf753be4ab394cbcf68bcf06.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/FaljEFvLbEOf02XprBuciA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - *' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -161,7 +161,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="3f326802-4038-4df5-95b4-1dda59046f48" ContentHash="IURjN34VGkGRh13pGA2Edg" CvTextArea="1480, 145, 51, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1466, 128, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="70f5adee-ba44-4315-8115-191f9ceaa137" InformativeScreenshot="98953f1abf753be4ab394cbcf68bcf06.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/FaljEFvLbEOf02XprBuciA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - *' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                             <uix:Target CVScreenId="3f326802-4038-4df5-95b4-1dda59046f48" CvTextArea="1320, 145, 131, 13" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1307, 128, 159, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Switch to new theme' /&gt;" Guid="595a27ed-f875-4552-befe-0118bb6b653b" SearchSteps="FuzzySelector, CV" />
                             <uix:Target CVScreenId="3f326802-4038-4df5-95b4-1dda59046f48" CvTextArea="1253, 145, 39, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1239, 128, 68, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' aaname='Home' check:innerText='Home' /&gt;" Guid="64a82af5-60f2-4123-b579-ad361d853de9" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
@@ -176,7 +176,7 @@
                         <uix:VerifyExecutionOptions.Target>
                           <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="afa0dfa9-2c0e-4549-9d34-62da0bdc6bb7" ContentHash="qmoOzHrFMECRb-sAQIAzlQ" CvTextArea="398, 221, 88, 38" CvTextArgument="Login" CvType="Text" DesignTimeRectangle="398, 218, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='page-header' aaname='                                                                                                                                                                                     Login                                                         ' check:innerText='Login' /&gt;" Guid="5116f099-f03b-4819-be61-fa8bbb5617c8" InformativeScreenshot="bd925f2f2f208e49c01120809019e806.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/2LU5rz5PfEWWEmirFXBSPQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="afa0dfa9-2c0e-4549-9d34-62da0bdc6bb7" CvTextArea="396, 144, 132, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="383, 128, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" Guid="d36bb12f-7c4b-4c2c-8b63-a7b78ed9ee5b" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
@@ -244,7 +244,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="daac381e-eaeb-4de2-b340-bf681c7798e0" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" ContentHash="oWRFQQnvN0mxI7qfv7UCDQ" CvElementArea="466, 586, 63, 37" CvTextArea="480, 598, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 588, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4f48dbe7-0f52-492d-9d2a-197d12b78d66" InformativeScreenshot="d4cd63b240530dd1a858becbcbb53496.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rGYIPrfk1EKKUE24TFs5xA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
