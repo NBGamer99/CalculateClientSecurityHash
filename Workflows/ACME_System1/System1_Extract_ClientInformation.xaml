@@ -104,14 +104,14 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Extract_ClientInformation" sap:VirtualizedContainerService.HintSize="1395,1058" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Extract_ClientInformation" sap:VirtualizedContainerService.HintSize="1393,1058" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Extracting Client Information of WI &quot; + in_WIID]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Work Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,862" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c96baa64-d32d-40ae-8eeb-6c67167369be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Work Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,862" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c96baa64-d32d-40ae-8eeb-6c67167369be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

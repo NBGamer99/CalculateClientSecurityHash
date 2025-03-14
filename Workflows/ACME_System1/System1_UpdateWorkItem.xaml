@@ -50,6 +50,8 @@
       <x:String>System.Security</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -109,91 +111,30 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_UpdateWorkItem" sap:VirtualizedContainerService.HintSize="1395,1452" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_UpdateWorkItem" sap:VirtualizedContainerService.HintSize="1528,1450" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Updating work Item details of &quot; + in_WIID]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Work Item Update" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1256" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Work Item Update" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1254" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1016" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1014" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click New Status" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V4">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="8b503732-8a90-4252-b818-bcdeb69cef20" ContentHash="qdkno8Z0gkWmc8_Mqfiunw" CvElementArea="427, 457, 223, 37" CvType="InputBox" DesignTimeRectangle="429, 458, 220, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn dropdown-toggle bs-placeholder btn-default' aaname='---' check:innerText='---' /&gt;" Guid="9ac306ac-a08b-4984-95b2-5915478c60d7" InformativeScreenshot="1494014b119a0f0c934989ed202d0af8.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/ehaHRBop6UWGsQgRb90-Sg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="8b503732-8a90-4252-b818-bcdeb69cef20" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="c9bbb945-8cbe-45db-94b1-974798f5381e" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="Drop down '---'" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" ContentHash="LckgohKQq02jGgE96x_G4g" DesignTimeRectangle="429, 494, 220, 116" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='dropdown-menu open' aaname='' /&gt;" Guid="3acda659-96cb-4188-a247-8d9a7c1592e6" InformativeScreenshot="8b6574846345c65ede8455942a63b578.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/LdigKbKbXUG_KMwQFWG3Lg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" CvElementArea="430, 500, 217, 24" CvType="InputBox" DesignTimeRectangle="450, 503, 14, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='text' tag='SPAN' type='' aaname='---' check:innerText='---' /&gt;" Guid="2093375c-7fe5-48f7-a0c7-88ef8a4ae3b8" SearchSteps="FuzzySelector, CV" />
-                          <uix:Target CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="d654f2ac-083c-451e-be6b-8b68ee893ee2" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Status" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V4">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="17d31f30-8aea-45f7-bd7a-03e991fb8b4e" ContentHash="6xHAu2j_B06mVcgB0uUV3w" CvElementArea="430, 500, 217, 24" CvType="InputBox" DesignTimeRectangle="434, 496, 211, 112" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}' /&gt;&quot;, in_Status)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' type='' class='' aaname='{0}' check:innerText='{0}' /&gt;&quot;, in_Status)]" Guid="4edfa0af-18a4-4854-9fac-2e0fc68a1d0f" InformativeScreenshot="002ac9fea75b94677bac6aa9565dd280.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/hmJAuE_Q_E2Vg8AZyJCj5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="17d31f30-8aea-45f7-bd7a-03e991fb8b4e" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="1bb64175-3192-408f-b81d-50298835f075" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="Button 'Button 'Completed''" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" ContentHash="xGKRdHP0AUGMshdk3AfRww" CvElementArea="429, 459, 220, 33" CvType="InputBox" DesignTimeRectangle="427, 457, 223, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' aaname='{0}' check:innerText='{0}' /&gt;&quot;, in_Status)]" Guid="d8107b3a-f823-4c1f-9a8a-df45f41165ee" InformativeScreenshot="5f922c773640d542bf2edb8513ec229c.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/Iu97ZXmjkECVGkbQErLdOw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="15f9c19f-324a-4211-a874-1ec289a90e13" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Add Comments'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Text="[in_Comment]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" ContentHash="Q-u7CQuprUKwJY4mgH35Hw" CvElementArea="426, 362, 1081, 57" CvType="InputBox" DesignTimeRectangle="429, 364, 1078, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' type='text' class='form-control' aaname='' /&gt;" Guid="e569ba67-1c11-4e00-bd55-89789bb07ff0" InformativeScreenshot="6e4a259d96527cdbe946314a376f4e25.png" IsResponsive="True" Reference="Ptmyqy4CHEaUfMDtPO_J0A/0z0F07OWpEKrVOFYSw-aOg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" CvTextArea="427, 342, 110, 13" CvTextArgument="Add Comments:" CvType="Text" DesignTimeRectangle="429, 339, 108, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Add Comments:' check:innerText='Add Comments:' /&gt;" Guid="0414ab95-fc18-452b-ab29-5f94217fd41e" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -210,11 +151,72 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click New Status" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="8b503732-8a90-4252-b818-bcdeb69cef20" ContentHash="qdkno8Z0gkWmc8_Mqfiunw" CvElementArea="427, 457, 223, 37" CvType="InputBox" DesignTimeRectangle="429, 458, 220, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn dropdown-toggle bs-placeholder btn-default' aaname='---' check:innerText='---' /&gt;" Guid="9ac306ac-a08b-4984-95b2-5915478c60d7" InformativeScreenshot="1494014b119a0f0c934989ed202d0af8.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/ehaHRBop6UWGsQgRb90-Sg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="8b503732-8a90-4252-b818-bcdeb69cef20" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="c9bbb945-8cbe-45db-94b1-974798f5381e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Drop down '---'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" ContentHash="LckgohKQq02jGgE96x_G4g" DesignTimeRectangle="429, 494, 220, 116" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='dropdown-menu open' aaname='' /&gt;" Guid="3acda659-96cb-4188-a247-8d9a7c1592e6" InformativeScreenshot="8b6574846345c65ede8455942a63b578.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/LdigKbKbXUG_KMwQFWG3Lg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" CvElementArea="430, 500, 217, 24" CvType="InputBox" DesignTimeRectangle="450, 503, 14, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='text' tag='SPAN' type='' aaname='---' check:innerText='---' /&gt;" Guid="2093375c-7fe5-48f7-a0c7-88ef8a4ae3b8" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CVScreenId="39573f4f-9375-4430-8958-7bcd3b746463" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="d654f2ac-083c-451e-be6b-8b68ee893ee2" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Status" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="17d31f30-8aea-45f7-bd7a-03e991fb8b4e" ContentHash="6xHAu2j_B06mVcgB0uUV3w" CvElementArea="430, 500, 217, 24" CvType="InputBox" DesignTimeRectangle="434, 496, 211, 112" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}' /&gt;&quot;, in_Status)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' type='' class='' aaname='{0}' check:innerText='{0}' /&gt;&quot;, in_Status)]" Guid="4edfa0af-18a4-4854-9fac-2e0fc68a1d0f" InformativeScreenshot="002ac9fea75b94677bac6aa9565dd280.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/hmJAuE_Q_E2Vg8AZyJCj5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="17d31f30-8aea-45f7-bd7a-03e991fb8b4e" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="1bb64175-3192-408f-b81d-50298835f075" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Button 'Button 'Completed''" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" ContentHash="xGKRdHP0AUGMshdk3AfRww" CvElementArea="429, 459, 220, 33" CvType="InputBox" DesignTimeRectangle="427, 457, 223, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' aaname='{0}' check:innerText='{0}' /&gt;&quot;, in_Status)]" Guid="d8107b3a-f823-4c1f-9a8a-df45f41165ee" InformativeScreenshot="5f922c773640d542bf2edb8513ec229c.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/Iu97ZXmjkECVGkbQErLdOw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="15f9c19f-324a-4211-a874-1ec289a90e13" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Update Work Item Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dae67f7e-4cb8-4ff3-b7cb-01127d0546c8" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" ContentHash="5r3b21AMwUyuGStVvXRYew" CvElementArea="428, 506, 159, 37" CvTextArea="459, 517, 114, 16" CvTextArgument="Update Work Item" CvType="Button" DesignTimeRectangle="429, 507, 156, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='buttonUpdate' tag='BUTTON' type='button' class='btn btn-default' aaname=' Update Work Item' check:innerText='Update Work Item' /&gt;" Guid="c40556ca-bdef-43c3-a131-d1b6650ca094" InformativeScreenshot="3daa842b7587bf3ea534e2e3ca604fd5.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rs-OmesOiUWL5_bgdL5p4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="66532d08-680c-4c0e-b63a-54fced6c1364" CvTextArea="428, 436, 81, 13" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 433, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' check:innerText='New Status:' /&gt;" Guid="6358977f-7c81-4cc9-849b-9db2a17d5233" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -228,7 +230,7 @@
                   <uix:VerifyExecutionOptions.Target>
                     <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="ea63f742-772d-427a-9b75-1ca64743135f" ContentHash="GfDU74CNSkWMCZlErM9uWA" CvTextArea="758, 125, 210, 16" CvTextArgument="Work Item was updated accordingly" CvType="Text" DesignTimeRectangle="760, 122, 416, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='Work Item was updated accordingly' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='Work Item was updated accordingly' role='text' automationid='' check:fulltext='Work Item was updated accordingly' /&gt;" Guid="2e730c24-e585-4656-83f5-e336486573d1" InformativeScreenshot="c60c18420cac27c9a9636bd27a727f05.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/j6fjQ1Ha10ymIS2AmsoHZQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Profile 1 - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target CVScreenId="ea63f742-772d-427a-9b75-1ca64743135f" CvTextArea="758, 97, 177, 16" CvTextArgument="acme-test.uipath.com says" CvType="Text" DesignTimeRectangle="758, 97, 177, 16" ElementType="Text" Guid="85daa644-379d-4550-96b0-0cc6e2d42cca" SearchSteps="CV" TargetType="ComputerVisionBased" />
                         </scg:List>
                       </uix:TargetAnchorable.Anchors>

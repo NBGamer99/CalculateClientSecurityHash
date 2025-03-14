@@ -6,6 +6,7 @@
 .tmh/
 .activities/
 .screenshots/
+Exceptions_Screenshots
 .UiPath/
 UiPath.settings
 *.nuget.props

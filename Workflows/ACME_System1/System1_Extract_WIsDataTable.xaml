@@ -104,14 +104,14 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Extract_WIsDataTable" sap:VirtualizedContainerService.HintSize="1395,680" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Extract_WIsDataTable" sap:VirtualizedContainerService.HintSize="1410,722.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Extracting WIs Datatable&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6ba5fcdf-ee5b-427f-94d1-cdf706d8df5e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6ba5fcdf-ee5b-427f-94d1-cdf706d8df5e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

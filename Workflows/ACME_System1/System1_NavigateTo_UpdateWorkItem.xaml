@@ -95,14 +95,14 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_UpdateWorkItem" sap:VirtualizedContainerService.HintSize="1412,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_UpdateWorkItem" sap:VirtualizedContainerService.HintSize="1410,722.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;✅ Navigating to work Item update details page of &quot; + in_WIID]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f1e81081-27f9-49ff-b1c0-aa0d05cf4813" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge ACME System 1" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f1e81081-27f9-49ff-b1c0-aa0d05cf4813" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -118,7 +118,7 @@
               <uix:NCheckElement.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/105244607" CVScreenId="8b62abe5-99c5-4009-af9a-5944a65ba88c" ContentHash="3o5C9EEBIEChel05tsLz_A" CvTextArea="428, 199, 146, 20" CvTextArgument="Update Work Item" CvType="Text" DesignTimeRectangle="429, 199, 1078, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Update Work Item' check:innerText='Update Work Item' /&gt;" Guid="5f52991c-ff29-46d8-8ee9-381482f6948b" InformativeScreenshot="787b398f8bd7b83a1c1f13c52993f6d5.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/CYMsRtsqUkiC-9zhsw6I_g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="8b62abe5-99c5-4009-af9a-5944a65ba88c" CvTextArea="427, 232, 38, 13" CvTextArgument="WIID:" CvType="Text" DesignTimeRectangle="429, 231, 36, 16" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='WIID:' check:innerText='WIID:' /&gt;" Guid="d5c3312f-b76f-4d0c-820d-ee413ba8eead" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
