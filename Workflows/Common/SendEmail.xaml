@@ -111,7 +111,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="856,1592" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="1836,1592" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(upr:ILocalResource)" Default="[New List(Of ILocalResource)()]" Name="Attachments" />
       <Variable x:TypeArguments="upr:ILocalResource" Name="ir" />
@@ -132,7 +132,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[new List(of ILocalResource) from {ir}]" AuthScopesInvalid="False" Body="[in_Body]" ConnectionId="c63374cc-ba82-425f-b5de-bdeede961a7f" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,500" sap2010:WorkflowViewState.IdRef="SendEmailConnections_2" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.Normal]" InputType="HTML" SaveAsDraft="True" Subject="[in_Subject]" To="[New String() { in_To }]" UseConnectionService="True">
+          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[new List(of ILocalResource) from {ir}]" AuthScopesInvalid="False" Body="[in_Body]" ConnectionId="c63374cc-ba82-425f-b5de-bdeede961a7f" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,500" sap2010:WorkflowViewState.IdRef="SendEmailConnections_2" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.Normal]" InputType="HTML" SaveAsDraft="False" Subject="[in_Subject]" To="[New String() { in_To }]" UseConnectionService="True">
             <uga:SendEmailConnections.AttachmentsBackup>
               <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
                 <usau:BackupSlot.BackupValues>
@@ -162,7 +162,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt; No Attachements&lt;/SPAN&gt;&lt;/P&gt;&quot;, in_Body)]" ConnectionId="c63374cc-ba82-425f-b5de-bdeede961a7f" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,500" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.Normal]" InputType="HTML" SaveAsDraft="True" Subject="[in_Subject]" To="[New String() { in_To }]" UseConnectionService="True">
+          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt; No Attachements&lt;/SPAN&gt;&lt;/P&gt;&quot;, in_Body)]" ConnectionId="c63374cc-ba82-425f-b5de-bdeede961a7f" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,500" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.Normal]" InputType="HTML" SaveAsDraft="False" Subject="[in_Subject]" To="[New String() { in_To }]" UseConnectionService="True">
             <uga:SendEmailConnections.AttachmentsBackup>
               <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
                 <usau:BackupSlot.BackupValues>

@@ -95,20 +95,20 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Close" sap:VirtualizedContainerService.HintSize="1836,1181" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Close" sap:VirtualizedContainerService.HintSize="1836,1183" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Workflow Start" sap:VirtualizedContainerService.HintSize="486,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Closing System1 application.&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,985" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="29a16918-0585-48ab-a976-b4b556443d70" Timeout="2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,987" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="29a16918-0585-48ab-a976-b4b556443d70" Timeout="2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,745" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,747" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="IsNotLoggedOn" />
             </Sequence.Variables>
@@ -117,7 +117,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[IsNotLoggedOn]" ScopeIdentifier="29a16918-0585-48ab-a976-b4b556443d70" Version="V4">
+            <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[IsNotLoggedOn]" ScopeIdentifier="29a16918-0585-48ab-a976-b4b556443d70" Timeout="1" Version="V4">
               <uix:NCheckElement.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" ContentHash="oWRFQQnvN0mxI7qfv7UCDQ" CvElementArea="466, 586, 63, 37" CvTextArea="480, 598, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 588, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4f48dbe7-0f52-492d-9d2a-197d12b78d66" InformativeScreenshot="d4cd63b240530dd1a858becbcbb53496.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rGYIPrfk1EKKUE24TFs5xA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -128,7 +128,7 @@
                 </uix:TargetAnchorable>
               </uix:NCheckElement.Target>
             </uix:NCheckElement>
-            <If Condition="[IsNotLoggedOn = False]" sap:VirtualizedContainerService.HintSize="418,494" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[IsNotLoggedOn = False]" sap:VirtualizedContainerService.HintSize="418,496" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
