@@ -5,6 +5,8 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.25.1-preview]",
+    "UiPath.GSuite.Activities": "[3.0.10]",
+    "UiPath.Mail.Activities": "[2.0.10]",
     "UiPath.System.Activities": "[25.2.2]",
     "UiPath.Testing.Activities": "[24.10.4]",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
@@ -86,7 +88,8 @@
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       }
     ],
-    "saveToCloud": false
+    "saveToCloud": false,
+    "cloudProjectUrl": "https://cloud.uipath.com:443/ynabouzi/studio_/designer/be8f1d8b-3faf-4c04-b533-0e88d6993342"
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

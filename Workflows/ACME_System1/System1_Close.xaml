@@ -42,6 +42,8 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -90,58 +92,93 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Close" sap:VirtualizedContainerService.HintSize="797,747.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Close" sap:VirtualizedContainerService.HintSize="1836,1181" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Workflow Start" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Closing System1 application.&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,520" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="29a16918-0585-48ab-a976-b4b556443d70" Version="V2">
+    <ui:LogMessage DisplayName="Log Message Workflow Start" sap:VirtualizedContainerService.HintSize="486,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Closing System1 application.&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,985" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="29a16918-0585-48ab-a976-b4b556443d70" Timeout="2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,745" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="IsNotLoggedOn" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="29a16918-0585-48ab-a976-b4b556443d70" Version="V4">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" ContentHash="ZfbvR_fJ3kOTvfp9UgBJ5g" CvTextArea="1480, 145, 51, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1466, 127, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="232ce98d-0358-4bb9-b91f-3a4f6add9748" InformativeScreenshot="10de6eaed68bd626761e32c6256877b8.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/ESlPR2z3oke0L_gMH6BKUw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+            <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[IsNotLoggedOn]" ScopeIdentifier="29a16918-0585-48ab-a976-b4b556443d70" Version="V4">
+              <uix:NCheckElement.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" ContentHash="oWRFQQnvN0mxI7qfv7UCDQ" CvElementArea="466, 586, 63, 37" CvTextArea="480, 598, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 588, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4f48dbe7-0f52-492d-9d2a-197d12b78d66" InformativeScreenshot="d4cd63b240530dd1a858becbcbb53496.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rGYIPrfk1EKKUE24TFs5xA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                      <uix:Target CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" CvTextArea="1320, 145, 131, 13" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1307, 127, 159, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Switch to new theme' /&gt;" Guid="cd441e1b-1704-4325-af80-4a1cccd2a358" SearchSteps="FuzzySelector, CV" />
-                      <uix:Target CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" CvTextArea="1253, 145, 39, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1239, 127, 68, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' aaname='Home' check:innerText='Home' /&gt;" Guid="94c7e0c2-0f8a-4055-8413-a0ad7d90bfe2" SearchSteps="FuzzySelector, CV" />
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" CvElementArea="530, 586, 175, 37" CvTextArea="545, 598, 147, 16" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="532, 588, 172, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?                             ' tag='A' type='' class='btn bg-warning' check:innerText='Forgot Your Password?' /&gt;" Guid="e62797ee-d175-4e90-ba3e-2465422612f4" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="Button 'Login'" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" ContentHash="oWRFQQnvN0mxI7qfv7UCDQ" CvElementArea="466, 586, 63, 37" CvTextArea="480, 598, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 588, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4f48dbe7-0f52-492d-9d2a-197d12b78d66" InformativeScreenshot="d4cd63b240530dd1a858becbcbb53496.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rGYIPrfk1EKKUE24TFs5xA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" CvElementArea="530, 586, 175, 37" CvTextArea="545, 598, 147, 16" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="532, 588, 172, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?                             ' tag='A' type='' class='btn bg-warning' check:innerText='Forgot Your Password?' /&gt;" Guid="e62797ee-d175-4e90-ba3e-2465422612f4" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+              </uix:NCheckElement.Target>
+            </uix:NCheckElement>
+            <If Condition="[IsNotLoggedOn = False]" sap:VirtualizedContainerService.HintSize="418,494" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="29a16918-0585-48ab-a976-b4b556443d70" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" ContentHash="ZfbvR_fJ3kOTvfp9UgBJ5g" CvTextArea="1480, 145, 51, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1466, 127, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="232ce98d-0358-4bb9-b91f-3a4f6add9748" InformativeScreenshot="10de6eaed68bd626761e32c6256877b8.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/ESlPR2z3oke0L_gMH6BKUw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                            <uix:Target CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" CvTextArea="1320, 145, 131, 13" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1307, 127, 159, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Switch to new theme' /&gt;" Guid="cd441e1b-1704-4325-af80-4a1cccd2a358" SearchSteps="FuzzySelector, CV" />
+                            <uix:Target CVScreenId="d32de0f9-dc94-45fe-bf1d-fa5de26d4aef" CvTextArea="1253, 145, 39, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1239, 127, 68, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' aaname='Home' check:innerText='Home' /&gt;" Guid="94c7e0c2-0f8a-4055-8413-a0ad7d90bfe2" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Button 'Login'" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" ContentHash="oWRFQQnvN0mxI7qfv7UCDQ" CvElementArea="466, 586, 63, 37" CvTextArea="480, 598, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 588, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4f48dbe7-0f52-492d-9d2a-197d12b78d66" InformativeScreenshot="d4cd63b240530dd1a858becbcbb53496.png" Reference="Ptmyqy4CHEaUfMDtPO_J0A/rGYIPrfk1EKKUE24TFs5xA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eeca8a3b-ff31-491e-b1ff-5e9d7e5b0bdf" CvElementArea="530, 586, 175, 37" CvTextArea="545, 598, 147, 16" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="532, 588, 172, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?                             ' tag='A' type='' class='btn bg-warning' check:innerText='Forgot Your Password?' /&gt;" Guid="e62797ee-d175-4e90-ba3e-2465422612f4" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
