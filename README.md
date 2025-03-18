@@ -47,7 +47,7 @@ For each client record requiring a security hash (identified as WI5 work items):
 
 ## REFramework Architecture
 
-![]("./assets/process.png")
+![](./Assets/process.png)
 
 ## Process Flow
 
