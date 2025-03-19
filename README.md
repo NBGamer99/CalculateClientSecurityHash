@@ -24,6 +24,10 @@
 
 </div>
 
+<div align="center">
+  <img src="https://i.programmerhumor.io/2021/05/programmerhumor-io-programming-memes-cf8aa57e1bbc914.png" alt="robot meme" height="500"/>
+</div>
+
 ## Project Overview
 
 This project automates the process of generating security hashes for client data using the ACME System 1 web application. The automation follows the Robotic Enterprise Framework (REFramework), which provides a structured approach for building robust, resilient, and maintainable automation solutions.
